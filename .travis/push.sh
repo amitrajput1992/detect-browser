@@ -7,13 +7,13 @@ setup_git() {
 
 commit_website_files() {
   git checkout master
-  npm version patch
-  git add .
-  git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
+#  npm version patch
+#  git add .
+#  git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
 upload_files() {
-  git remote add origin https://${github_token}@github.com/amitrajput1992/detect-browser.git > /dev/null 2>&1
+#  git remote add origin https://${github_token}@github.com/amitrajput1992/detect-browser.git > /dev/null 2>&1
   git push --quiet --set-upstream origin master
 }
 
