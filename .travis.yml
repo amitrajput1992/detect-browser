@@ -10,6 +10,8 @@ node_js:
 install:
   - yarn install
 script:
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_AUTH_TOKEN}" > .npmrc
+  - npm whoami
   - yarn compile
   - npm run patch-release
 deploy:
