@@ -18,8 +18,3 @@ deploy:
     skip_cleanup: true
     on:
       branch: master
-  - provider: releases
-    api_key: $github_token
-    skip_cleanup: true
-    on:
-      branch: master
