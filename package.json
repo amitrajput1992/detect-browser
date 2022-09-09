@@ -1,5 +1,5 @@
 {
-  "name": "detect-browser",
+  "name": "@amit.rajput/detect-browser",
   "version": "5.3.0",
   "description": "Unpack a browser type and version from the useragent string",
   "main": "index.js",
@@ -32,12 +32,12 @@
     "detect",
     "useragent"
   ],
-  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "author": "Amit Rajpur <amitrajput123.ar@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DamonOehlman/detect-browser/issues"
+    "url": "https://github.com/amitrajput1992/detect-browser/issues"
   },
-  "homepage": "https://github.com/DamonOehlman/detect-browser",
+  "homepage": "https://github.com/amitrajput1992/detect-browser",
   "devDependencies": {
     "@types/node": "^13.9.1",
     "embellish-readme": "^1.7.2",
