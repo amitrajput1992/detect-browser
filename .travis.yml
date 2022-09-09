@@ -12,6 +12,7 @@ install:
 script:
   - yarn compile
   - npm run prepare-release
+  - git push origin master --follow-tags
 deploy:
 #  - provider: npm
 #    email: $email
@@ -24,5 +25,5 @@ deploy:
     skip_cleanup: true
     on:
       branch: master
-after_deploy:
-  - .travis/push.sh
+#after_deploy:
+#  - .travis/push.sh
