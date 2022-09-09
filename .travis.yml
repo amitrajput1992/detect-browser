@@ -11,7 +11,7 @@ install:
   - yarn install
 script:
   - yarn compile
-  - npm patch-release
+  - npm run patch-release
 deploy:
   - provider: npm
     email: $email
