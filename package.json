@@ -22,17 +22,20 @@
     "autoformat": "prettier --write src/** test/**",
     "gendocs": "embellish README.md"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "stability": "stable",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DamonOehlman/detect-browser.git"
+    "url": "https://github.com/amitrajput1992/detect-browser.git"
   },
   "keywords": [
     "browser",
     "detect",
     "useragent"
   ],
-  "author": "Amit Rajpur <amitrajput123.ar@gmail.com>",
+  "author": "Amit Rajput <amitrajput123.ar@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/amitrajput1992/detect-browser/issues"
