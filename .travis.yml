@@ -11,19 +11,15 @@ install:
   - yarn install
 script:
   - yarn compile
-  - npm run prepare-release
-  - git push origin master --follow-tags
 deploy:
-#  - provider: npm
-#    email: $email
-#    api_key: $npm_token
-#    skip_cleanup: true
-#    on:
-#      branch: master
+  - provider: npm
+    email: $email
+    api_key: $npm_token
+    skip_cleanup: true
+    on:
+      branch: master
   - provider: releases
     api_key: $github_token
     skip_cleanup: true
     on:
       branch: master
-#after_deploy:
-#  - .travis/push.sh

@@ -1,6 +1,6 @@
 {
   "name": "@amit.rajput/detect-browser",
-  "version": "5.3.16",
+  "version": "5.3.20",
   "description": "Unpack a browser type and version from the useragent string",
   "main": "index.js",
   "module": "es/index.js",
@@ -15,7 +15,7 @@
     "compile:es": "rimraf es && tsc --outDir es --module es6 --declaration false",
     "compile-and-size": "yarn tsc && cat index.js | gzip | wc -c",
     "prepare": "npm-run-all compile test lint",
-    "prepare-release": "npm version patch",
+    "prepare-release": "npm version patch && git push origin master --follow-tags",
     "patch-release": "npm version patch && npm publish && npm run postpublish",
     "minor-release": "npm version minor && npm publish && npm run postpublish",
     "major-release": "npm version major && npm publish && npm run postpublish",
