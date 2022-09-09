@@ -94,7 +94,8 @@ export type Browser =
   | 'instagram'
   | 'ios-webview'
   | 'curl'
-  | 'searchbot';
+  | 'searchbot'
+  | 'oculus';
 export type OperatingSystem =
   | 'iOS'
   | 'Android OS'
@@ -137,6 +138,7 @@ const userAgentRules: UserAgentRule[] = [
   ['edge-ios', /EdgiOS\/([0-9\._]+)/],
   ['yandexbrowser', /YaBrowser\/([0-9\._]+)/],
   ['kakaotalk', /KAKAOTALK\s([0-9\.]+)/],
+  ['oculus', /OculusBrowser\/([0-9\.]+)/],
   ['samsung', /SamsungBrowser\/([0-9\.]+)/],
   ['silk', /\bSilk\/([0-9._-]+)\b/],
   ['miui', /MiuiBrowser\/([0-9\.]+)$/],
