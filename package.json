@@ -15,6 +15,7 @@
     "compile:es": "rimraf es && tsc --outDir es --module es6 --declaration false",
     "compile-and-size": "yarn tsc && cat index.js | gzip | wc -c",
     "prepare": "npm-run-all compile test lint",
+    "prepare-release": "npm version patch && npm run postpublish",
     "patch-release": "npm version patch && npm publish && npm run postpublish",
     "minor-release": "npm version minor && npm publish && npm run postpublish",
     "major-release": "npm version major && npm publish && npm run postpublish",
